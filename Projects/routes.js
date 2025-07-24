@@ -23,9 +23,6 @@ const requestHandler = (req, res) => {
                 res.setHeader("Location", "/");
                 return res.end();
             });
-            console.log(fs.readFile("message.txt", (err, data) => {
-                console.log(data);
-            }));
         });
     }
     res.write('<html>');
